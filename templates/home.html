@@ -1,0 +1,10 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="text-center">
+  <h1 class="display-4">Welcome to Student Management System</h1>
+
+  <p class="lead">Mini Project using Django</p>
+  <a href="{% url 'student_list' %}" class="btn btn-primary"> View Students </a>
+</div>
+
+{% endblock %}

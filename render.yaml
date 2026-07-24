@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: student-management
+    runtime: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn config.wsgi:application"
